@@ -1,0 +1,67 @@
+<!-- add_destination.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDestinationActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewAddDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Destination"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:layout_below="@id/textViewAddDestination"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- City -->
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:layout_below="@id/editTextCountry"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Description -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewDestination"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnSubmit"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="145dp"
+        android:text="Submit" />
+</RelativeLayout>

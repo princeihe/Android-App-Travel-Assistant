@@ -1,0 +1,48 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Bucket List"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Destination"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- My Destinations Button -->
+    <Button
+        android:id="@+id/btnMyDestinations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Destinations"
+        android:layout_below="@id/btnAddDestination"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- View Destinations on Map Button -->
+    <Button
+        android:id="@+id/btnViewOnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:layout_below="@id/btnMyDestinations"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
